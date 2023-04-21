@@ -23,7 +23,18 @@ const Sidebar = ({ data }: SidebarProps) => {
         <p>{education[2]}</p>
         <div>
           <h3>Contact Me</h3>
-          <a href={contactLinks[0]}>Email</a>
+          <a href={contactLinks?.[0]} aria-label="Email link">
+            <Envelope />
+          </a>
+          <a href={contactLinks?.[1]} aria-label="Twitter link">
+            <Twitter />
+          </a>
+          <a href={contactLinks?.[2]} aria-label="LinkedIn link">
+            <Linkedin />
+          </a>
+          <a href={contactLinks?.[3]} aria-label="GitHub link">
+            <Github />
+          </a>
         </div>
       </div>
     </aside>
