@@ -3,16 +3,52 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
-    './app/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    colors: {
+      black: '#191A19',
+      yellow: '#FFF734',
+      green: '#68F590',
+      grey: '#F3F3F3',
+      'grey-light': '#FAFAFA',
+      'green-light': '#d2eff1',
+      white: '#fff'
     },
+    fontFamily: {
+      sans: ['Georgia', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+      display: ['Oswald']
+    },
+    fontSize: {
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem'
+    },
+    extend: {
+      screens: {
+        // => @media (min-width: 640px) {...}
+        sm: '640px',
+
+        // => @media (min-width: 768px) {...}
+        md: '768px',
+
+        // => @media (min-width: 1024px) {...}
+        lg: '1024px',
+
+        // => @media (min-width: 1280px) {...}
+        xl: '1280px',
+
+        // => @media (min-width: 1536px) {...}
+        '2xl': '1536px'
+      }
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
