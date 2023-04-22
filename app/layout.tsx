@@ -40,7 +40,7 @@ export default function RootLayout({
           and the main content of the page.
         */}
         <Sidebar data={personal} />
-        <main className="grow-full p-8 sm:p-16 w-full sm:basis-2/3  ml-auto">
+        <main className="bg-green grow-full p-8 sm:p-16 w-full sm:basis-2/3  ml-auto">
           {children}
         </main>
       </body>
