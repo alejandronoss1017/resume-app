@@ -37,8 +37,8 @@ const Sidebar = ({ data }: SidebarProps) => {
       <div className="profile-container">
         <Image
           priority
-          width={300}
-          height={300}
+          width={280}
+          height={280}
           src={'/images/profile.jpg'}
           alt="Profile image"
           className="profile-image"
