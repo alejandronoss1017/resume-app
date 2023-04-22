@@ -15,7 +15,14 @@ const Sidebar = ({ data }: SidebarProps) => {
     // Aside is a semantic HTML element that represents a section of a page, usually to represent a sidebar.
     <aside className="sidebar">
       <div className="text-white flex flex-col p-10 items-center">
-        <Image src={''} alt="Profile image" />
+        <Image
+          priority
+          width={300}
+          height={300}
+          src={'/images/profile.jpg'}
+          alt="Profile image"
+          className="profile-image"
+        />
         <h1>{name}</h1>
         <h2>{role}</h2>
         <p>{education[0]}</p>
