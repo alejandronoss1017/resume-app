@@ -34,6 +34,15 @@ export default function RootLayout({
       <head>
         <Head />
       </head>
+      {/*
+        The body tag is the main container of the page. It contains all the content
+        of the page, including the header, footer, and main content.
+
+        The flex and flex-col classes are used to display the elements of the page,
+        it will display the elements in a column (Contours side by side). The sm:flex-row
+        class is used to display the elements in a row (Contours on top of each other) when
+        the screen size is greater than 640px.
+       */}
       <body className="flex flex-col sm:flex-row">
         {/*
           From here we pass the data to the sidebar component and render it
