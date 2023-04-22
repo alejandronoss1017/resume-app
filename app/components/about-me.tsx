@@ -31,7 +31,8 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
   return (
     //Section is a semantic HTML element that represents a section of a page.
     <section>
-      <h2 className="mb-8">{title}</h2>
+      <h2>{title}</h2>
+      <hr className="mb-6 border-2" />
       {bodyList}
       <SkillsSection skills={skills}></SkillsSection>
     </section>
