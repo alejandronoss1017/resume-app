@@ -1,6 +1,7 @@
 import React, { useId } from 'react';
 import { AboutMe } from '../data/types-data';
-import Skills from './skills';
+import { skills } from '../data/page-data';
+import SkillsSection from './skills';
 
 // We define the type of props that our component will receive
 type AboutMeProps = {
@@ -32,7 +33,7 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
     <section>
       <h2 className="mb-8">{title}</h2>
       {bodyList}
-      <Skills></Skills>
+      <SkillsSection skills={skills}></SkillsSection>
     </section>
   );
 };
