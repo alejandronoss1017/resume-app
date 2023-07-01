@@ -1,7 +1,8 @@
 import Sidebar from './components/sidebar';
 import './globals.css';
 import { personal } from './data/page-data';
-import Head from './head';
+// import Head from './head';
+import Head from 'next/head';
 
 /**
  *  In this file, we define the layout of the application.
@@ -31,9 +32,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <Head />
-      </head>
+      <Head>
+        <title>My portfolio</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       {/*
         The body tag is the main container of the page. It contains all the content
         of the page, including the header, footer, and main content.
