@@ -54,6 +54,7 @@ const Sidebar = ({ data }: SidebarProps) => {
               href={contactLinks?.[0]}
               target="_blank"
               aria-label="Email link"
+              rel="noreferrer"
             >
               <Envelope />
             </a>
@@ -62,6 +63,7 @@ const Sidebar = ({ data }: SidebarProps) => {
               href={contactLinks?.[1]}
               target="_blank"
               aria-label="Twitter link"
+              rel="noreferrer"
             >
               <Twitter />
             </a>
@@ -70,6 +72,7 @@ const Sidebar = ({ data }: SidebarProps) => {
               href={contactLinks?.[2]}
               target="_blank"
               aria-label="LinkedIn link"
+              rel="noreferrer"
             >
               <Linkedin />
             </a>
@@ -78,6 +81,7 @@ const Sidebar = ({ data }: SidebarProps) => {
               href={contactLinks?.[3]}
               target="_blank"
               aria-label="GitHub link"
+              rel="noreferrer"
             >
               <Github />
             </a>
