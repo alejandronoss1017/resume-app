@@ -39,7 +39,7 @@ const Sidebar = ({ data }: SidebarProps) => {
           priority
           width={280}
           height={280}
-          src={'/images/profile.jpg'}
+          src={'/images/profile.png'}
           alt="Profile image"
           className="profile-image"
         />
@@ -52,6 +52,7 @@ const Sidebar = ({ data }: SidebarProps) => {
             <a
               className="icons-contact-me"
               href={contactLinks?.[0]}
+              target="_blank"
               aria-label="Email link"
             >
               <Envelope />
@@ -59,6 +60,7 @@ const Sidebar = ({ data }: SidebarProps) => {
             <a
               className="icons-contact-me"
               href={contactLinks?.[1]}
+              target="_blank"
               aria-label="Twitter link"
             >
               <Twitter />
@@ -66,6 +68,7 @@ const Sidebar = ({ data }: SidebarProps) => {
             <a
               className="icons-contact-me"
               href={contactLinks?.[2]}
+              target="_blank"
               aria-label="LinkedIn link"
             >
               <Linkedin />
@@ -73,6 +76,7 @@ const Sidebar = ({ data }: SidebarProps) => {
             <a
               className="icons-contact-me"
               href={contactLinks?.[3]}
+              target="_blank"
               aria-label="GitHub link"
             >
               <Github />
