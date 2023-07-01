@@ -91,7 +91,21 @@ const Skills = ({ skills }: SkillProps) => {
     >
       {skills[activeTab].map((skill, i) => (
         <li key={`${id}_${i}`} className="skill">
-          <span>{skill.icon}</span> {skill.text}
+          <span className="flex items-center align-middle">
+            {skill.icon && !skill.iconHeight && !skill.iconWidth && (
+              skill.icon
+            )}
+            {skill.icon && skill.iconHeight && skill.iconWidth && (
+              <img
+                src={`${skill.icon}`}
+                height={skill.iconHeight}
+                width={skill.iconWidth}
+                alt=""
+                className={`${skill.className}`}
+              />
+            )}
+            {skill.text}
+          </span>
         </li>
       ))}
     </ul>
