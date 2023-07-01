@@ -37,3 +37,10 @@ export type Data = {
   skills: Skills;
   professional: Professional;
 };
+
+export type Project = {
+  title: string;
+  description: string;
+  link: string;
+  image: string;
+};
