@@ -52,7 +52,11 @@ main h2 {
 }
 
 .skill {
-  @apply bg-green-light text-lg py-2 px-4 w-fit rounded-md font-serif;
+  @apply bg-green-light text-lg py-2 px-4 w-fit rounded-md font-serif transition;
+}
+
+.skill:hover {
+  @apply cursor-pointer transform scale-105;
 }
 
 /* Styles for sidebar */
@@ -78,4 +82,12 @@ main h2 {
 
 .icons-contact-me {
   @apply text-2xl m-2;
+}
+
+.card-container {
+  @apply flex flex-col w-60 rounded-2xl shadow-black shadow-sm m-2 bg-white transition;
+}
+
+.card-container:hover {
+  @apply cursor-pointer transform scale-105 ease-linear;
 }
