@@ -12,7 +12,10 @@ export type AboutMe = {
 
 export type Skill = {
   icon: String;
+  iconWidth?: number;
+  iconHeight?: number;
   text: String;
+  className?: String;
 };
 
 export type Skills = {
