@@ -27,7 +27,7 @@ export type Professional = {
 
 export type Experience = {
   role: string;
-  description: string;
+  description: string[];
   current: boolean;
 };
 
